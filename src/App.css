@@ -1,32 +1,188 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
+/*---------- Header ---------*/
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card-container{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-wrap: wrap;
+}
+
+.header-parts{
+  width: 27%;
+  align-self: center
+}
+.header-parts-book{
+  width: 28%;
+}
+
+.header-book{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.header-whatis{
+  font-size: 2em;
+  margin: 5% 0 0 0;
+}
+
+.header-desc{
+  font-size: 1.35em;
+  margin-bottom: 5%;
+  margin-top: 15px;
+}
+
+.header-button{
+  background: #22234D;
+  padding: 4% 15% 4% 15%;
   color: white;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+  letter-spacing: 1.5px;
 }
 
-.App-link {
-  color: #61dafb;
+.arrow-button{
+  position: relative;
+  top: 2.5px;
+  left: 2.5px
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  {
+  .header-parts{
+  width: none;
+  margin-right: 5%
   }
-  to {
-    transform: rotate(360deg);
+  .header-parts-book{
+    width: 40%
+  }
+  .header-whatis{
+    font-size: 1.3em;
+    margin: 5% 0 0 0;
+  }
+  
+  .header-desc{
+    font-size: 1em;
+    margin-bottom: 5%;
+    margin-top: 15px;
+  }
+}
+
+@media only screen 
+and (min-device-width : 200px) 
+and (max-device-width : 767px) { 
+  .header-parts{
+    width:40%;
+    margin-right: 5%
+  }
+  .header-parts-book{
+    display: none
+  }
+  .header-whatis{
+    font-size: 1.2em;
+    margin: 5% 0 0 0;
+  }
+    
+  .header-desc{
+    font-size: 0.85em;
+    margin-bottom: 9%;
+    margin-top: 10px;
+  }
+  .header-button{
+    padding: 4% 20% 4% 20%;
+    letter-spacing: 1.5px;
+  }
+}
+
+/*---------- Main ---------*/
+
+.main-container{
+  margin: 0 auto;
+  width: 87%;
+}
+
+.title-main{
+  text-align: center;
+  color: #32335A;
+  font-size: 2em;
+  margin: 6% 0 5% 0
+}
+
+@media only screen 
+and (min-device-width : 200px) 
+and (max-device-width : 767px) { 
+  .title-main {
+    font-size: 1.5em;
+    margin: 10% 0 10% 0;
+  }
+}
+
+/*---------- Card ---------*/
+
+.icons{
+  width: 50%;
+  height: 100%;
+}
+
+.circle{
+  width: 58px;
+  height: 58px;
+  border-radius: 90%;
+  background: #E7F0FE;
+  text-align: center
+}
+
+.card-main{
+  width: 28%;
+  margin-right: 5%;
+  margin-bottom: 4%
+}
+
+.title-card{
+  color: #32335A;
+  font-size: 1.1em
+}
+
+.desc-card{
+  color: #73788C;
+  font-size: 1.1em;
+  line-height: 1.3em;
+  font-family: 'Roboto', sans-serif;
+}
+
+.learn-card{
+  color: #6098FB;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+.arrow{
+  margin-left: 1%;
+  position: relative;
+}
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  {
+  .card-main{
+    width: 45%;
+    margin-right: 5%;
+    margin-bottom: 4%
+  }
+}
+
+@media only screen 
+and (min-device-width : 200px) 
+and (max-device-width : 767px) { 
+  .card-main{
+    width: 100%;
+    margin-right: 0%;
+    margin-bottom: 8%
   }
 }
