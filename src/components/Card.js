@@ -14,7 +14,6 @@ function Card(props) {
       <p className="learn-card">LEARN MORE
           <img className="arrow" src={arrow} alt="arrow" />
       </p>
-
     </div>
   );
 }

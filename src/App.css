@@ -86,9 +86,11 @@ and (max-device-width : 767px) {
     margin-right: 5%;
     margin-left: 5%;
   }
+
   .header-parts-book{
     display: none
   }
+
   .header-whatis{
     font-size: 1.2em;
     margin: 5% 0 0 0;
@@ -99,13 +101,16 @@ and (max-device-width : 767px) {
     margin-bottom: 9%;
     margin-top: 8px;
   }
+
   .header-button{
     padding: 4% 15% 4% 15%;
     letter-spacing: 1.5px;
   }
+
   .header-button{
     font-size: 0.6em
   }
+  
   .arrow-button{
     display: none
   }
