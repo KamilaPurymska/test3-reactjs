@@ -44,11 +44,11 @@
   border: none;
   font-weight: bold;
   letter-spacing: 1.5px;
+  display: flex
 }
 
 .arrow-button{
   position: relative;
-  top: 2.5px;
   left: 2.5px
 }
 
@@ -56,21 +56,25 @@
 and (min-device-width : 768px) 
 and (max-device-width : 1024px)  {
   .header-parts{
-  width: none;
-  margin-right: 5%
+    width: none;
+    margin-right: 5%;
   }
   .header-parts-book{
     width: 40%
   }
   .header-whatis{
-    font-size: 1.3em;
+    font-size: 1.55em;
     margin: 5% 0 0 0;
   }
   
   .header-desc{
     font-size: 1em;
     margin-bottom: 5%;
-    margin-top: 15px;
+    margin-top: 10px;
+  }
+  .header-button{
+    font-size: 0.7em;
+    padding: 5% 12% 5% 12%;
   }
 }
 
@@ -79,7 +83,8 @@ and (min-device-width : 200px)
 and (max-device-width : 767px) { 
   .header-parts{
     width:40%;
-    margin-right: 5%
+    margin-right: 5%;
+    margin-left: 5%;
   }
   .header-parts-book{
     display: none
@@ -92,11 +97,17 @@ and (max-device-width : 767px) {
   .header-desc{
     font-size: 0.85em;
     margin-bottom: 9%;
-    margin-top: 10px;
+    margin-top: 8px;
   }
   .header-button{
-    padding: 4% 20% 4% 20%;
+    padding: 4% 15% 4% 15%;
     letter-spacing: 1.5px;
+  }
+  .header-button{
+    font-size: 0.6em
+  }
+  .arrow-button{
+    display: none
   }
 }
 
@@ -139,8 +150,8 @@ and (max-device-width : 767px) {
 }
 
 .card-main{
-  width: 28%;
-  margin-right: 5%;
+  width: 28.5%;
+  margin-right: 4.8%;
   margin-bottom: 4%
 }
 
